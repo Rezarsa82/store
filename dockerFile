@@ -1,0 +1,11 @@
+FROM node:alpine
+
+WORKDIR C:\Users\Reza\Desktop\store-1\store
+
+COPY . C:\Users\Reza\Desktop\store-1\store
+
+RUN npm install -g @angular/cli
+
+RUN npm install
+
+CMD ["ng", "s", "-o"]
